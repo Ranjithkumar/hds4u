@@ -1,0 +1,3 @@
+class SubGroup < Group
+
+end
