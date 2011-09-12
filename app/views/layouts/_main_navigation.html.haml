@@ -1,3 +1,6 @@
 #main-navigation
   %ul.wat-cf
-    %li
+    %li{:class => main_navigation_select("home") }= link_to t('views.main_navigation.home')
+    %li= link_to t('views.main_navigation.requests')
+    %li= link_to t('views.main_navigation.knowledge_base')
+    %li= link_to t('views.main_navigation.my_details')
