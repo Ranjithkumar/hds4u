@@ -408,3 +408,46 @@ button.button:active, a.button:active {
 .link_button{
   cursor: pointer;
 }
+
+/* flash messages */
+
+#errorExplanation {
+  background: pink;
+  color: red;
+  padding: 20px 80px 10px 10px;
+  margin: 20px 80px;
+  text-align: left !important;
+}
+
+#errorExplanation p {
+  color: red;
+  font-weight: bold;
+  font-size: 1em;
+  font-style: normal;
+}
+
+#errorExplanation p + p {
+  color: red;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+#errorExplanation ul {
+  margin-left: 30px;
+  list-style-type: circle;
+}
+
+h2.title span{
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none !important;
+  background-color: #dedede;
+  border-width: 1px;
+  border-style: solid;
+  font-size: 12px;
+  font-weight: normal;
+  float: right;
+  margin-right: 20px;
+}

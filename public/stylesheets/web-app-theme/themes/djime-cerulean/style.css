@@ -227,6 +227,11 @@ hr {
   border: 1px solid #fbb;
   background-color: #fdd;
 }
+.flash .alert {
+  border: 1px solid #fbb;
+  background-color: #fdd;
+}
+
 .flash .warning {
   border: 1px solid #e0d300;
   background-color: #ffffcc;

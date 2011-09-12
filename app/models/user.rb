@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
   has_many :roles, :through => :user_roles
   has_many :faqs
   
-  has_and_belongs_to_many :groups
+  has_and_belongs_to_many :groups, :join_table => "user_groups"
   
   validates :email, :presence => true, :uniqueness => true, :email_format => true, :length => { :minimum => 5 }
   validates :name, :presence => true
