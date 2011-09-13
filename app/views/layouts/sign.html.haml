@@ -1,0 +1,21 @@
+!!! Strict
+%html
+  %head
+    %meta{'http-equiv' => 'Content-Type', :content => 'text/html; charset=utf-8'}
+    %title Help Desk Login
+    = stylesheet_link_tag "web-app-theme/base", "web-app-theme/themes/djime-cerulean/style", "web-app-theme/override"
+  %body
+    #container
+      #header
+        %h1
+          %a{:href => "/"} Help Desk
+      #wrapper.wat-cf
+        .flash
+          - flash.each do |type, message|
+            .message{:class => type.to_s}
+              <p>#{ message }</p>
+        #main
+          .block
+            .content
+              .inner
+                = yield

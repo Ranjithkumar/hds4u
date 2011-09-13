@@ -1,8 +1,6 @@
 #main-navigation
   %ul.wat-cf
-    %li
-      =link_to "Users"
-    %li
-      =link_to "Groups", groups_path
-    %li
-      =link_to "Roles"
+    %li{:class => main_navigation_select("home") }= link_to t('views.main_navigation.home')
+    %li= link_to t('views.main_navigation.requests')
+    %li= link_to t('views.main_navigation.knowledge_base')
+    %li= link_to t('views.main_navigation.my_details')

@@ -5,3 +5,10 @@ en:
   hello: "Hello world"
   
   app_name: "Help Desk"
+  
+  views:
+    main_navigation:
+      home: Home
+      requests: Requests
+      knowledge_base: Knowledge Base
+      my_details: My Details
