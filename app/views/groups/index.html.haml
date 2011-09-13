@@ -1,0 +1,4 @@
+=render :partial=> group_header
+-@groups.each do |group|
+  =render :partial => group, :local => {:grp => group}
+  
