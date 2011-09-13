@@ -32,7 +32,10 @@ Hds4u::Application.routes.draw do
   #     resources :comments, :sales
   #     resource :seller
   #   end
-
+  
+  resources :users do
+  end
+  
   # Sample resource route with more complex sub-resources
   #   resources :products do
   #     resources :comments

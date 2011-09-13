@@ -445,9 +445,70 @@ h2.title span{
   text-decoration: none !important;
   background-color: #dedede;
   border-width: 1px;
-  border-style: solid;
   font-size: 12px;
   font-weight: normal;
   float: right;
   margin-right: 20px;
 }
+
+.form label.label_inline{
+    width: 30%;
+    color: #666666;
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-bottom: 2px;
+    display: inline-block;
+}
+
+.w5{
+    width: 5% !important;
+}
+
+.w10{
+    width: 10% !important;
+}
+
+.w15{
+    width: 15% !important;
+}
+
+.w20{
+    width: 20% !important;
+}
+
+.w25{
+    width: 25% !important;
+}
+
+.w30{
+    width: 30% !important;
+}
+
+.w40{
+    width: 40% !important;
+}
+
+.w80p{
+    width: 80px !important;
+}
+
+.w60{
+    width: 60% !important;
+}
+
+.form textarea.label_inline{
+    width: 486px;
+    margin-left:3px;
+    height: 5em;
+    vertical-align: baseline;
+}
+
+.margin-top-20{margin-top:20px;}
+.margin-top-10{margin-top:10px;}
+.margin-bottom-10{margin-bottom:10px;}
+.margin-bottom-20{margin-bottom:20px;}
+.margin-left-20{margin-left:20px;}
+.margin-right-20{margin-right:20px;}
+.margin-right-10{margin-right:10px;}
+.margin-left-10{margin-left:10px;}

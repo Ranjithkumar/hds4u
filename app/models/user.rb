@@ -7,9 +7,9 @@ class User < ActiveRecord::Base
   
   #has_many :user_roles
   #has_many :roles, :through => :user_roles
-  has_many :faqs
+  has_many :faqs, :dependent => :destroy
   
-  has_and_belongs_to_many :groups, :join_table => "user_groups"
+  has_and_belongs_to_many :groups, :join_table => "user_groups", :delete_sql => 'DELETE FROM user_groups WHERE user_id=#{id}'
   
   validates :email, :presence => true, :uniqueness => true, :email_format => true, :length => { :minimum => 5 }
   validates :name, :presence => true
