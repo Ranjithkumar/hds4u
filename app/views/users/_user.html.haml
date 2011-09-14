@@ -1,0 +1,7 @@
+%tr
+  %td= user.id
+  %td= user.name
+  %td.last
+    =link_to t('web-app-theme.edit'), edit_user_url(user)
+    = "|"
+    =link_to t('web-app-theme.delete'), user_url(user), :method => :delete, :confirm => "Are you sure?"

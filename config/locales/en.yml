@@ -7,8 +7,27 @@ en:
   app_name: "Help Desk"
   
   views:
+    create_success_msg: "%{type} was successfully created."
+    update_success_msg: "%{type} was successfully updated."
+    
     main_navigation:
       home: Home
       requests: Requests
       knowledge_base: Knowledge Base
       my_details: My Details
+      
+    users:
+      title: Users
+      id: Id
+      name: Name
+      no_user: No user
+      new_user: New user
+      user_name: Username
+      pwd: Password
+      pwd_confirmation: Password confirmation
+      employee_id: "Employee ID"
+      email: Email
+      phone: Phone
+      mobile: Mobile
+      role: Role
+      edit_user: "Edit User"

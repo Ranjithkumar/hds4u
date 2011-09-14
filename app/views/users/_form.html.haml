@@ -1,0 +1,42 @@
+.group
+  = f.label t('views.users.user_name'), :class => :label_inline
+  = f.text_field :user_name, :class => 'text_field w30'
+  
+.group
+  = f.label t('views.users.name'), :class => :label_inline
+  = f.text_field :name, :class => 'text_field w30'
+  
+.group
+  = f.label t('views.users.pwd'), :class => :label_inline
+  = f.password_field :password, :class => 'text_field w30'  
+  
+.group
+  = f.label t('views.users.pwd_confirmation'), :class => :label_inline
+  = f.password_field :password_confirmation, :class => 'text_field w30'
+
+.group
+  = f.label t('views.users.employee_id'), :class => :label_inline
+  = f.text_field :employee_id, :class => 'text_field w30'
+
+.group
+  = f.label t('views.users.email'), :class => :label_inline
+  = f.text_field :email, :class => 'text_field w30'
+
+.group
+  = f.label t('views.users.phone'), :class => :label_inline
+  = f.text_field :phone_no, :class => 'text_field w30'
+
+.group
+  = f.label t('views.users.mobile'), :class => :label_inline
+  = f.text_field :mobile_no, :class => 'text_field w30'
+  
+.group
+  = f.label t('views.users.role'), :class => :label_inline
+  = f.select :role_id, @roles.map{|c| [c.title, c.id]}
+  
+.group.navform.wat-cf
+  %button.button{:type => "submit"}
+    = image_tag("web-app-theme/icons/tick.png", :alt => "#{t("web-app-theme.save", :default => "Save")}")
+    = t("web-app-theme.save", :default => "Save")
+  %span.text_button_padding= t("web-app-theme.or", :default => "or")
+  = link_to t("web-app-theme.cancel", :default => "Cancel"), users_path, :class => "text_button_padding link_button"

@@ -1,0 +1,21 @@
+.block
+  .content
+    %h2.title
+      = t('views.users.title')
+      %span= link_to t('web-app-theme.new'), new_user_path
+    .inner
+      - unless @users.blank?
+        %table.table
+          %tr
+            %th.first= t('views.users.id')
+            %th= t('views.users.name')
+            %th.last &nbsp;
+          = render :partial => "user", :collection => @users
+          
+        .actions-bar.wat-cf
+          .actions
+          = will_paginate @users
+      - else
+        = t('views.users.no_user')
+          
+
