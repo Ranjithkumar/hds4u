@@ -1,4 +1,19 @@
-=render :partial=> group_header
--@groups.each do |group|
-  =render :partial => group, :local => {:grp => group}
-  
+.block
+  .content
+    %h2.title
+      = t('views.groups.title')
+      %span= link_to t('web-app-theme.new'), new_group_path
+    .inner
+      - unless @groups.blank?
+        %table.table
+          %tr
+            %th.first= t('views.groups.title')
+            %th= t('views.groups.short_name')
+            %th.last &nbsp;
+          = render :partial => "group", :collection => @groups
+          
+        .actions-bar.wat-cf
+          .actions
+          = will_paginate @groups
+      - else
+        = t('views.groups.no_group')

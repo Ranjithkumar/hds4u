@@ -1,0 +1,8 @@
+.block
+  .content
+    %h2.title= t('views.users.edit_user')
+    .inner
+      - form_for @group, :url => group_path(@group), :html => {:class => "form"} do |f|
+        .columns.wat-cf
+          = error_messages_for :user
+          = render :partial => "form", :locals => {:f => f}

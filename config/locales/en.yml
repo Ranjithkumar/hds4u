@@ -31,3 +31,11 @@ en:
       mobile: Mobile
       role: Role
       edit_user: "Edit User"
+    groups:
+      title: Groups
+      no_group: No Group
+      id: Id
+      new_group: New Group
+      short_name: Group Short Name
+      description: Description
+      role: Group Parent

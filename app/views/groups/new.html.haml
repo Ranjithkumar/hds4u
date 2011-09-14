@@ -1,3 +1,8 @@
--form_for :ticket, :html=>{:method => :post} do |f|
-  =f.text_field 'sandeep'
-  =f.submit
+.block
+  .content
+    %h2.title= t("views.users.new_user")
+    .inner
+      -form_for @group, :url=> groups_path, :html=>{:class => "form"} do |f|
+        .columns.wat-cf
+          = error_messages_for :group
+          = render :partial => "form", :locals => {:f => f}

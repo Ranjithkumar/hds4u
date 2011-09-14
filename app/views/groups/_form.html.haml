@@ -1,0 +1,22 @@
+.group
+  = f.label t('views.groups.title'), :class => :label_inline
+  = f.text_field :title, :class => 'text_field w30'
+  
+.group
+  = f.label t('views.groups.short_name'), :class => :label_inline
+  = f.text_field :short_name, :class => 'text_field w30'
+  
+.group            
+  = f.label t('views.groups.description'), :class => :label_inline
+  = f.password_field :description, :class => 'text_field w30' 
+  
+.group
+  = f.label t('views.groups.role'), :class => :label_inline
+  = f.select :group_id, @groups.map{|c| [c.title, c.id]} if @groups
+  
+.group.navform.wat-cf
+  %button.button{:type => "submit"}
+    = image_tag("web-app-theme/icons/tick.png", :alt => "#{t("web-app-theme.save", :default => "Save")}")
+    = t("web-app-theme.save", :default => "Save")
+  %span.text_button_padding= t("web-app-theme.or", :default => "or")
+  = link_to t("web-app-theme.cancel", :default => "Cancel"), groups_path, :class => "text_button_padding link_button"
